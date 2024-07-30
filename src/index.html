@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
     <link href="./style.css" rel="stylesheet" />
     <title>RandomUsers</title>
   </head>
   <body>
     <div class="bg-dark flex h-screen items-center justify-center">
-      <div class="border border-slate-500 py-8 px-12 w-wrapperWidht rounded-md shadow-xl">
+      <div
+        class="border border-slate-500 py-8 px-12 w-wrapperWidht rounded-md shadow-xl"
+      >
         <div class="flex justify-between">
           <h2 class="text-3xl text-[#fff]">RandomUsers</h2>
           <button
             class="border py-2 px-6 rounded-md bg-slate-600 hover:bg-transparent transition-all duration-150 text-[#fff] hover"
+            id="reloadBtn"
           >
             Reload
           </button>
@@ -20,36 +24,48 @@
 
         <div class="mt-10 flex justify-between">
           <div
-            class="p-5 flex flex-col gap-1 bg-bgColor rounded-md items-center"
+            class="p-5 flex flex-col gap-2 justify-center bg-bgColor rounded-md items-center w-48"
           >
-            <img src="./images/Ellipse 1.png" alt="person" class="w-20" />
-            <h3 class="mt-2 font-bold">Lesile Young</h3>
-            <p class="font-bold">(606) 993-9783</p>
+            <img
+              src="./images/Ellipse 1.png"
+              alt="person"
+              class="w-20 rounded-full"
+              id="avatar"
+            />
+            <h3 class="mt-2 font-bold text-wrap text-center" id="name">
+              Mr Lesile Young
+            </h3>
+            <p class="font-bold" id="phoneNu">(606) 993-9783</p>
           </div>
 
           <div
-            class="bg-bgColor p-5 rounded-md flex flex-col w-address justify-between">
+            class="bg-bgColor py-4 px-5 rounded-md flex flex-col w-address justify-between h-56"
+          >
             <p class="text-text text-slate-800">
-              <span class="font-semibold text-black">Email :</span>
-              lesile.Young@example.com
+              Email :
+              <span class="font-semibold text-black" id="email">lesile.Young@example.com</span>
             </p>
             <p class="text-text text-slate-800">
-              <span class="font-semibold text-black">Age :</span> 62
+              Age :
+              <span class="font-semibold text-black" id="age">62</span>
             </p>
             <p class="text-text text-slate-800">
-              <span class="font-semibold text-black">Nationality : </span>US
-              us-flower
+              Nationality :
+              <span class="font-semibold text-black" id="nationality"> US us-flower</span>
             </p>
             <p class="text-text text-slate-800">
-              <span class="font-semibold text-black">Address :</span> No 440,
-              Spring Hill Rd, lllinios States
+              Address :
+              <span class="font-semibold text-black" id="address">No 440, Spring Hill Rd, lllinios States</span
+              >
             </p>
             <p class="text-text text-slate-800">
-              <span class="font-semibold text-black">Postcode:</span> 44127
+              Postcode:
+              <span class="font-semibold text-black" id="postcode">44127</span>
             </p>
           </div>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
