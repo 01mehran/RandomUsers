@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <link href="./style.css" rel="stylesheet" />
+  <title>RandomUsers</title>
+  <link rel="shortcut icon" href="./images/Ellipse 1.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="bg-dark flex min-h-screen min-w-full items-center justify-center ">
+    <div
+      class="border border-slate-500 py-8 px-12 w-wrapperWidht rounded-md shadow-2xl shadow-slate-700 max-[860px]:w-[600px] max-[630px]:border-1 max-[640px]:w-[450px]">
+      <div
+        class="flex justify-between max-[860px]:justify-center max-[860px]:gap-[15rem] max-[630px]:gap-[7rem] max-[630px]:mt-3">
+        <h2 class="text-3xl text-[#fff] max-[860px]:text-2xl">RandomUsers</h2>
+        <button
+          class="border py-2 px-6 rounded-md bg-slate-600 hover:bg-emerald-400 hover:font-medium transition-all duration-150 text-[#fff] active:bg-emerald-200"
+          id="reloadBtn">
+          Reload
+        </button>
+      </div>
+
+      <div
+        class="mt-10 flex justify-between max-[860px]:justify-center gap-3 max-[630px]:flex-col max-[630px]:gap-1 max-[630px]:mt-5">
+        <div
+          class="p-5 flex flex-col gap-2 justify-center bg-bgColor rounded-md items-center w-48 max-[860px]:w-44 max-[630px]:w-[350px] max-[630px]:mx-auto">
+          <img src="./images/Ellipse 1.png" alt="person" class="w-20 rounded-full" id="avatar" />
+          <h3 class="mt-2 font-bold text-wrap text-center" id="name">
+            Mr Lesile Young
+          </h3>
+          <p class="font-bold" id="phoneNu">(606) 993-9783</p>
+        </div>
+
+        <div
+          class="bg-bgColor py-4 px-5 rounded-md flex flex-col w-address justify-between h-56 max-[860px]:w-[390px] max-[630px]:w-[350px] max-[630px]:mx-auto">
+          <p class="text-text text-slate-800">
+            Email :
+            <span class="font-semibold text-black max-[630px]:text-base" id="email">lesile.Young@example.com</span>
+          </p>
+          <p class="text-text text-slate-800">
+            Age :
+            <span class="font-semibold text-black" id="age">62</span>
+          </p>
+          <p class="text-text text-slate-800">
+            Nationality :
+            <span class="font-semibold text-black max-[630px]:text-base" id="nationality"> US us-flower</span>
+          </p>
+          <p class="text-text text-slate-800">
+            Address :
+            <span class="font-semibold text-black max-[630px]:text-base" id="address">No 440, Spring Hill Rd, lllinios States</span>
+          </p>
+          <p class="text-text text-slate-800">
+            Postcode:
+            <span class="font-semibold text-black max-[630px]:text-base" id="postcode">44127</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
